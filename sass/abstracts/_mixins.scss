@@ -1,0 +1,25 @@
+//media query
+
+/*
+ 0 - 600px: phone
+600 - 900px: tablet portrait
+[1200 - 1800] - normal styles apply
+
+
+$breakpoint argument choices:
+-phone
+-tab-port
+
+ORDER:
+1 em = 16px
+*/
+
+
+@mixin respond($breakpoint){
+  @if $breakpoint == phone{
+    @media only screen  and (max-width: 37.5em) { @content }; //600px / 16
+  }
+  @if $breakpoint == tab-port{
+    @media only screen and (max-width: 56.25em) { @content }; //900px
+  }
+}

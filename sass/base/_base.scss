@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //default font-size of the browser: 16px
+  // 1rem = 10px => 10px / 16px = 62.5%
+  // % allows the user to change the font-size of the browser
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $color-gray-2;
+
+}
+
+.container{
+  max-width: 70rem;
+  margin: 0 auto;
+
+
+}

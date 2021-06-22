@@ -1,0 +1,62 @@
+.features {
+  height: 75vh;
+  background-color: $color-gray-3;
+  padding: 5rem 10%;
+
+  @include respond(tab-port){
+    flex: 0 0 50%;
+    height: auto;
+    justify-content: center;
+
+  }
+
+
+  &__heading{
+    width: 60%;
+    margin-bottom: 2rem;
+
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+    overflow: hidden;
+
+    @include respond(tab-port){
+      flex-direction: column;
+      justify-content: center;
+    }
+
+  }
+}
+
+.feature{
+
+  flex: 25%;
+  padding: 2rem;
+
+
+  @include respond(tab-port){
+    flex: 50%;
+  }
+
+
+  &__icon{
+    width: 7.2rem;
+    height: 7.2rem;
+    margin-bottom: 2rem;
+  }
+
+
+
+  &__text{
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: $color-gray;
+    overflow: hidden;
+  }
+}

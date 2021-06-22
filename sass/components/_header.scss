@@ -1,0 +1,96 @@
+.header {
+  height: 75vh;
+  background-color: $color-gray-2;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  min-width: 80%;
+
+
+  @include respond(tab-port){
+    flex-direction: column;
+    flex: 1;
+    order: 2;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+
+  //@include respond(phone){
+  //  flex-direction: column;
+  //  height: auto;
+  //  width: 100%;
+  //  align-items: center;
+  //}
+
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex: 1;
+    padding: 8em 10%;
+    margin: 0 auto;
+  }
+
+  &__image-box{
+    position: relative;
+    background-image: url("/img/bg-intro-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 1rem -10rem;
+    min-height: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex: 1.5;
+
+    @include respond(tab-port){
+      position: relative;
+      background-image: url("../../img/bg-intro-mobile.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      min-height: 50rem;
+      flex-direction: row;
+      flex: 3;
+      order: -2
+
+    }
+    @include respond(phone){
+      min-height: 30rem;
+      flex-direction: row;
+      align-items: center;
+
+    }
+
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url('/img/image-mockups.png');
+      background-size: 92%;
+      background-repeat: no-repeat;
+      background-position: center -12rem;
+
+      @include respond(tab-port){
+        min-height: 50rem;
+        background-size: 80%;
+
+      }
+      @include respond(phone){
+        min-height: 30rem;
+
+      }
+    }
+
+
+  }
+
+}

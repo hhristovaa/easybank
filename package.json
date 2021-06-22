@@ -1,0 +1,19 @@
+{
+  "name": "easybank",
+  "version": "1.0.0",
+  "description": "Easybank simple landing page",
+  "main": "index.js",
+  "dependencies": {
+    "all": "0.0.0",
+    "run": "^1.4.0",
+    "sass": "^1.35.1"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  },
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css --w"
+  },
+  "author": "Hristina Hristova",
+  "license": "ISC"
+}
