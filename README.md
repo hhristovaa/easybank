@@ -3,12 +3,12 @@
  
 Technologies used:
 
-HTML5
-CSS3
-Sass
-JavaScript
-BEM methodology
-IDE: WebStorm
+-HTML5
+-CSS3
+-Sass
+-JavaScript
+-BEM methodology
+-IDE: WebStorm
 
 TODO:
 - redesign mobile nav 
